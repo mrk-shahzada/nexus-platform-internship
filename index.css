@@ -1,19 +1,26 @@
-/* Standard CSS Fixes */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Reset to fix the "Bad Interface" */
+:root {
+  background-color: #f8fafc; /* Light gray background */
+  color: #0f172a; /* Dark blue text */
+}
+
 body {
   margin: 0;
-  padding: 0;
-  background-color: #f8fafc; /* Professional Light Gray */
-  font-family: sans-serif;
+  display: block;
+  min-height: 100vh;
 }
 
 #root {
   width: 100%;
 }
 
-/* Fixes the Calendar look */
+/* Ensure the calendar doesn't look broken */
 .fc {
-  background: white !important;
+  background: white;
   padding: 20px;
   border-radius: 12px;
-  border: 1px solid #e2e8f0;
 }
