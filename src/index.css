@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Reset to fix the "Bad Interface" */
+:root {
+  background-color: #f8fafc; /* Light gray background */
+  color: #0f172a; /* Dark blue text */
+}
+
+body {
+  margin: 0;
+  display: block;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+}
+
+/* Ensure the calendar doesn't look broken */
+.fc {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
